@@ -9,6 +9,15 @@ an easy way to use Full Calendar in a React project.
 
 This is a work in progress, please stay tune for more added features.
 
+## Installation
+```
+npm install --save @kktam/fullcalendar-react
+```
+
+```javascript
+<Calendar />
+```
+
 [build-badge]: https://api.travis-ci.org/kktam/fullcalender-react.svg?branch=master
 [build]: https://travis-ci.org/kktam/fullcalender-react.svg?branch=master
 
