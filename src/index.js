@@ -1,9 +1,12 @@
 import React, {Component} from 'react'
+import FullCalendar from './FullCalendar'
 
 export default class extends Component {
   render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
+    return (
+      <div>
+        <FullCalendar />
+      </div>
+    )
   }
 }
