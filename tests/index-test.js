@@ -15,9 +15,21 @@ describe('Component', () => {
     unmountComponentAtNode(node)
   })
 
-  it('displays a welcome message', () => {
+  it('displays a day button', () => {
     render(<Component/>, node, () => {
-      expect(node.innerHTML).toContain('Welcome to React components')
+      expect(node.innerHTML).toContain('day')
+    })
+  })  
+
+  it('displays a week button', () => {
+    render(<Component/>, node, () => {
+      expect(node.innerHTML).toContain('list week')
     })
   })
+
+  it('displays a month button', () => {
+    render(<Component/>, node, () => {
+      expect(node.innerHTML).toContain('month')
+    })
+  })  
 })
