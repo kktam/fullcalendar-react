@@ -21,7 +21,8 @@
   "dependencies": {
     "fullcalendar": "^3.4.0",
     "jquery": "^3.2.1",
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "superagent": "^3.5.2"
   },
   "peerDependencies": {
     "react": "15.x"

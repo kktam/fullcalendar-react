@@ -5,7 +5,9 @@ export default class extends Component {
   render() {
     return (
       <div>
-        <FullCalendar />
+        <FullCalendar 
+          events="true"
+        />
       </div>
     )
   }
