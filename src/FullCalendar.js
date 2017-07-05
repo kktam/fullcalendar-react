@@ -6,6 +6,7 @@ import 'fullcalendar'
 import 'fullcalendar/dist/fullcalendar.css'
 
 import { getEvents, calendarUrls } from './api/gcalevent'
+import { loadGcalApi, authorizeButtonStyle, signoutButtonStyle } from './api/gcalapi'
 
 class FullCalendar extends Component {
 
@@ -32,6 +33,8 @@ class FullCalendar extends Component {
             }
         });
 
+        loadGcalApi();
+
         const { calendar } = this.refs;
 
         this._calendar = $(calendar);
@@ -55,7 +58,13 @@ class FullCalendar extends Component {
 
     render() {
         return (
-            <div ref="calendar"></div>
+            <div>
+                <div>
+                    <button id="authorize-button" style={authorizeButtonStyle}>Authorize</button>
+                    <button id="signout-button" style={signoutButtonStyle}>Sign Out</button>
+                </div>
+                <div ref="calendar"></div>
+            </div>
         );
     }
 }
