@@ -2,7 +2,7 @@ import expect from 'expect'
 import React from 'react'
 import {render, unmountComponentAtNode} from 'react-dom'
 
-import Component from 'src/'
+import FullCalendar from 'src/'
 
 describe('Component', () => {
   let node
@@ -16,19 +16,19 @@ describe('Component', () => {
   })
 
   it('displays a day button', () => {
-    render(<Component/>, node, () => {
+    render(<FullCalendar/>, node, () => {
       expect(node.innerHTML).toContain('day')
     })
   })  
 
   it('displays a week button', () => {
-    render(<Component/>, node, () => {
+    render(<FullCalendar/>, node, () => {
       expect(node.innerHTML).toContain('list week')
     })
   })
 
   it('displays a month button', () => {
-    render(<Component/>, node, () => {
+    render(<FullCalendar/>, node, () => {
       expect(node.innerHTML).toContain('month')
     })
   })  
